@@ -35,7 +35,7 @@ with open(mainPath+"mini_val_train.csv", "w") as fileW:
         imgName = name[37:]
         folder = name [37:46]
         print(imgName,folder)
-        fileW.write(newPath+'val/'+folder+'/'+imgName+','+row[1]+'\n')
+        fileW.write(newPath+'train/'+folder+'/'+imgName+','+row[1]+'\n')
         
 with open(mainPath+"mini_val_test.csv", "w") as fileW:
     fileW.write('File,Label\n')
@@ -47,7 +47,7 @@ with open(mainPath+"mini_val_test.csv", "w") as fileW:
         imgName = name[37:]
         folder = name [37:46]
         print(imgName,folder)
-        fileW.write(newPath+'val/'+folder+'/'+imgName+','+row[1]+'\n')
+        fileW.write(newPath+'train/'+folder+'/'+imgName+','+row[1]+'\n')
         
 # Test
 
@@ -61,4 +61,4 @@ with open(mainPath+"mini_cl_test.csv", "w") as fileW:
         imgName = name[37:]
         folder = name [37:46]
         print(imgName,folder)
-        fileW.write(newPath+'test/'+folder+'/'+imgName+','+row[1]+'\n')
+        fileW.write(newPath+'train/'+folder+'/'+imgName+','+row[1]+'\n')
