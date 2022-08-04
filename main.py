@@ -41,7 +41,7 @@ if __name__ == "__main__":
     parser.add_argument('--data_path', default='/data5/quang/data/nico/',help='path where data is located')
     parser.add_argument('--samples_per_task', type=int, default=-1,help='training samples per task (all if negative)')
     parser.add_argument('--data_file', default='mini',help='data file')
-    parser.add_argument('--n_tasks', type=int, default=10)
+    parser.add_argument('--n_tasks', type=int, default=86)
     parser.add_argument('--train_csv', type=str, default='data/core50_tr.csv')
     parser.add_argument('--test_csv', type=str, default='data/core50_te.csv')
     parser.add_argument('--valid', action='store_false')
