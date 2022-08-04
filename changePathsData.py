@@ -61,4 +61,4 @@ with open(mainPath+"mini_cl_test.csv", "w") as fileW:
         imgName = name[37:]
         folder = name [37:46]
         print(imgName,folder)
-        fileW.write(newPath+'val/'+folder+'/'+imgName+','+row[1]+'\n')
+        fileW.write(newPath+'test/'+folder+'/'+imgName+','+row[1]+'\n')
