@@ -102,7 +102,8 @@ class CLwithDomain():
         test_data,  test_label = self.get_data('test')
 
         n_classes = int(np.unique(train_label).shape[0])
-        
+
+        print(n_classes,self.n_tasks)
         assert n_classes % self.n_tasks == 0
         n_classes_per_task = n_classes // self.n_tasks
 
