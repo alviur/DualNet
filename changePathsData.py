@@ -10,7 +10,7 @@ import csv
 mainPath = '/home/agomezvi/Desktop/dualNet/DualNet/data/'
 
 
-newPath = '/data/Datasets/miniImagenet/'
+newPath = '/data2/dataset/miniImagenet/'
 
 # Train
 with open(mainPath+"mini_cl_train.csv", "w") as fileW:
