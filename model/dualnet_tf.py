@@ -45,7 +45,7 @@ class Net(torch.nn.Module):
                 K.RandomCrop((84,84)), K.RandomHorizontalFlip(),
                 K.ColorJitter(brightness=0.4, contrast=0.4,saturation=0.2, hue=0.1, p=0.8),
                 K.RandomGrayscale(p=0.2),
-                K.GaussianBlur((3,3),(0.1,2.0), p=1.0),
+                #K.GaussianBlur((3,3),(0.1,2.0), p=1.0),
                 #K.RandomSolarize(p=0.0),
                 K.Normalize(torch.FloatTensor((0.5,0.5,0.5)), torch.FloatTensor((0.5,0.5,0.5))))
         self.transforms2 = nn.Sequential(
