@@ -7,7 +7,7 @@ lr=0.03
 beta=0.05
 reg=10.0
 temp=2.0
-path ='/home/agomezvi/dualnet/results/'
+path='/home/agomezvi/dualnet/results/'
 
 
 CIFAR_100i="--data_path data/ --save_path /home/agomezvi/dualnet/results/ --batch_size 10 --cuda yes --seed 0 --n_epochs 1 --use 1 --inner_steps 2  --n_outer 2 --replay_batch_size 10 --train_csv data/mini_cl_train.csv --test_csv data/mini_cl_test.csv --memory_strength $reg"
